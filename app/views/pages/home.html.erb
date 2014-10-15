@@ -1,9 +1,68 @@
-<h1>Welcome</h1><br><br>
-<p>
-  <%= button_tag(type: 'submit', class: "btn btn-success") do %>Click here to register for Digital Commerce Course
-  <% end %><br><br>
-  <%= button_tag(type: 'submit', class: "btn btn-info") do %>Click here to register for Interior Design Course
-  <% end %><br><br>
-  <%= button_tag(type: 'submit', class: "btn btn-danger") do %>Click here to register for Social Media Marketing Course
-  <% end %><br><br>
-</p>
+<div class="jumbotron center">
+  <h1><u>Welcome</u></h1><br><br>
+  <%= button_tag(type: 'submit', class: "btn btn-success bttn", data: {toggle: "modal", target: "#myModal"} ) do %>
+    Click here to register for Digital Commerce Course
+  <% end %><br><br><!--End of do-->
+  <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        </div><!--End of modal-header-->
+        <div class="modal-body">
+          ...
+        </div><!--End of modal-body-->
+        <div class="modal-footer">
+          <%= button_tag(class: "btn btn-default", data: {dismiss: "modal"} ) do %>
+            Close
+          <% end %><!--End of do-->
+        </div><!--End of modal-footer-->
+      </div><!--End of modal-content-->
+    </div><!--End of modal-dialogue-->
+  </div><!--End of modal-->
+
+  <%= button_tag(type: 'submit', class: "btn btn-info bttn", data: {toggle: "modal", target: "#myModal"} ) do %>
+    Click here to register for Interior Design Course
+  <% end %><br><br><!--End of do-->
+  <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        </div><!--End of modal-header-->
+        <div class="modal-body">
+          ...
+        </div><!--End of modal-body-->
+        <div class="modal-footer">
+          <%= button_tag(class: "btn btn-default", data: {dismiss: "modal"} ) do %>
+            Close
+          <% end %><!--End of do-->
+        </div><!--End of modal-footer-->
+      </div><!--End of modal-content-->
+    </div><!--End of modal-dialogue-->
+  </div><!--End of modal-->
+
+  <%= button_tag(type: 'submit', class: "btn btn-danger bttn", data: {toggle: "modal", target: "#myModal"} ) do %>
+    Click here to register for Social Media Marketing Course
+  <% end %><br><br><!--End of do-->
+  <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        </div><!--End of modal-header-->
+        <div class="modal-body">
+          ...
+        </div><!--End of modal-body-->
+        <div class="modal-footer">
+          <%= button_tag(class: "btn btn-default", data: {dismiss: "modal"} ) do %>
+            Close
+          <% end %><!--End of do-->
+        </div><!--End of modal-footer-->
+      </div><!--End of modal-content-->
+    </div><!--End of modal-dialogue-->
+  </div><!--End of modal-->
+</div><!--End of jumbotron-->
