@@ -1,3 +1,10 @@
+default: &default
+ adapter: mysql2
+ encoding: utf8
+ reconnect: false
+ pool: 5
+ timeout: 5000
+
 development:
  <<: *default
  database: try_development
@@ -17,7 +24,7 @@ test:
 production:
  <<: *default
  database: try_production
- host:localhost
+ host: localhost
  username: root
  password: password
  socket: /var/run/mysqld/mysqld.sock
