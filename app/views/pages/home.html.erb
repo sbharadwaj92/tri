@@ -1,12 +1,9 @@
 <h1>Welcome</h1><br><br>
 <p>
-  <h5>
-    <%= link_to 'Click here', root_path %> to register for Digital Commerce Course
-  </h5><br>
-  <h5>
-    <%= link_to 'Click here', root_path %> to register for Interior Design Course
-  </h5><br>
-  <h5>
-    <%= link_to 'Click here', root_path %> to register for Social Media Marketing Course
-  </h5><br>
+  <%= button_tag(type: 'submit', class: "btn btn-success") do %>Click here to register for Digital Commerce Course
+  <% end %><br><br>
+  <%= button_tag(type: 'submit', class: "btn btn-info") do %>Click here to register for Interior Design Course
+  <% end %><br><br>
+  <%= button_tag(type: 'submit', class: "btn btn-danger") do %>Click here to register for Social Media Marketing Course
+  <% end %><br><br>
 </p>
