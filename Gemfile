@@ -40,3 +40,4 @@ gem 'spring',        group: :development
 
 gem 'bootstrap-sass', '3.2.0.0'
 gem 'devise', '~> 3.4.0'
+gem 'activeadmin', github: 'activeadmin'
