@@ -13,6 +13,7 @@ gem 'devise', '~> 3.4.0'
 gem 'activeadmin', github: 'activeadmin'
 gem 'browser'
 gem 'mobvious'
+gem 'aws-sdk'
 
 group :doc do
   gem 'sdoc', '~> 0.4.0'
