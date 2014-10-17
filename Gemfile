@@ -14,7 +14,6 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'browser'
 gem 'mobvious'
 
-
 group :doc do
   gem 'sdoc', '~> 0.4.0'
 end
